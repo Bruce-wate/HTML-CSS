@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+main{
+    text-align: justify;
+    background-color: white;
+    padding: 10%;
+    width: 80%;
+    margin: auto;
+    border-radius: 1%;
+    box-shadow: 5px 5px 5px 5px  rgb(122, 109, 109);
+    text-align: center;
+}
+.voltar{
+    display: flexbox;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.548);
+}

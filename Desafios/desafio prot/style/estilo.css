@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html{
+    background-color: lightcyan;
+}
+
+/*Header side*/
+
+header{
+    background-color: green;
+}
+
+header > h2{
+    text-align: center;
+    padding: 20px;
+}
+
+header > span#burger{
+    text-align: right;
+    display: block;
+    background-color: rgba(30, 180, 30, 0.842);
+    padding: 5px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+header > nav{
+    background-color: rgba(35, 187, 35, 0.733);
+    display: none;
+}
+
+header > nav > ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+}
+
+header > nav > ul > li{
+    margin-left: 30px;
+}
+
+header > nav > ul > li > a{
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(22, 59, 0);
+}
+header > nav > ul > li > a:hover{
+    background-color:lightgreen;   
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 1s;
+    border-radius: 9px;
+    text-decoration: underline;
+}
+
+/*Main side*/
+
+main{
+    width: 70vw;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    margin-top: 25px;
+}
+
+main > h4{
+    padding: 5px;
+    background-image: linear-gradient(to right, green, white);
+}
+main > p{
+    text-align: justify;
+    text-indent: 18px;
+    margin-bottom: 12px;
+    margin-top: 5px;
+}

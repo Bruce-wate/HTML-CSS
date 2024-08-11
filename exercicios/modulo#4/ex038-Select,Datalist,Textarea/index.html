@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist, Select e Textarea</title>
+</head>
+<body>
+    <h1>Aula sobre</h1>
+
+    <form action="serv.php">
+    
+        <p>
+            <label for="prov">Províncias de Moçambique</label>
+            <select name="provincias" id="prov">
+
+                <option value="escolha">--Selecione a sua província--</option>
+                <optgroup label="Zona Sul">
+                    <option value="CM">Cidade de Maputo</option>
+                    <option value="MP">Maputo Província</option>
+                    <option value="GZ">Gaza</option>
+                </optgroup>
+                <optgroup label="Zona centro">
+                    <option value="SF">Sofala</option>
+                    <option value="MN">Manica</option>
+                    <option value="Tt">Tete</option>
+                    <option value="ZB">Zambézia</option>
+                </optgroup>
+                <optgroup label="Zona Norte">
+                    <option value="NP">Nampula</option>
+                    <option value="CD">Cabo Delgado</option>
+                    <option value="NS">Niassa</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissões</label>
+            <input type="text" name="prof" id="iprof" list="lprof">
+
+            <datalist id="lprof">
+                <option value="ADM">Admnistrador</option>
+                <option value="CTD">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="Prof">Professor</option>
+            </datalist> 
+        </p>
+    
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <p>
+            <label for="imsg">Adicione um comentário</label> <br>
+
+            <textarea name="msg" id="imsg" cols="20" rows="5"></textarea>
+        </p>
+    </form>
+</body>
+</html>

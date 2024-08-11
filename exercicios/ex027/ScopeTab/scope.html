@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scolgroup</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        td,th{
+            border: 1px solid black;
+            width: 180px;
+        }
+
+        col.colnome{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Profissões</h1>
+    
+    <table>
+
+        <colgroup>
+            <col class="colnome">
+            <col class="colsex">
+            <col class="coldad">
+            <col class="prof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                 <td>Julia Duarte</td>
+                 <td>Feminino</td>
+                 <td>21</td>
+                 <td>Médica</td>
+            </tr>
+
+            <tr>
+                <td>Julião</td>
+                <td>Masculino</td>
+                <td>24</td>
+                <td>Ladrão</td>
+            </tr>
+            <tr>
+                <td>Denise Manjate</td>
+                <td>Feminino</td>
+                <td>25</td>
+                <td>Advogada</td>
+            </tr>
+            <tr>
+                <td>Edilson Tembe</td>
+                <td>Masculino</td>
+                <td>19</td>
+                <td>Diplomata</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

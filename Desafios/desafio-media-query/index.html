@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Media Query</title>
+</head>
+<body>
+    
+    <header>
+        <h2>Meu Site</h2>
+        <span id="burger" class="material-symbols-outlined" onclick="menu()">menu</span>
+        <nav id="itens">
+            <ul>
+                <li><a href="#">Opção1</a></li>
+                <li><a href="#">Opção2</a></li>
+                <li><a href="#">Opção3</a></li>
+                <li><a href="#">Opção4</a></li>
+                <li><a href="#">Opção5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h3>Testando Media Queries</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero repudiandae sunt enim, explicabo similique nisi repellendus, modi consequuntur placeat sed porro voluptatem voluptatibus ut aspernatur optio tempora facere quia cum id maxime culpa perspiciatis. Voluptatem dolorem autem totam fuga culpa sapiente quia excepturi soluta repellendus, doloribus dolore enim recusandae. Nesciunt quos iusto, ducimus praesentium, animi ipsum amet doloribus id adipisci deserunt possimus! Ipsa blanditiis dolor esse labore nam illo! Eius repellat beatae natus nulla adipisci doloribus ab iure exercitationem!</p> 
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nostrum. Ipsam quibusdam laborum asperiores. Eaque hic velit quam totam, eius ullam quaerat labore quia! Alias, modi minus ex perspiciatis expedita praesentium aliquid facere mollitia fugiat? Impedit rerum ipsa fugiat officiis recusandae sed reprehenderit accusamus architecto, perspiciatis ducimus libero fugit atque, nisi modi iusto ex eligendi amet deleniti. Mollitia officiis quae fuga nam veniam possimus, nemo iure totam architecto autem consequatur laborum, optio recusandae enim asperiores vero illo beatae, commodi voluptatem? Vel accusantium dolorem sit aspernatur ullam officiis? Neque, similique saepe!</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ea eligendi ullam sed aperiam reprehenderit, quod in earum dolorem, est minima iusto quam quibusdam aut eius perferendis dignissimos sunt architecto doloribus. Provident illum, illo molestias aut a assumenda aliquam consectetur suscipit quia nostrum velit, deleniti possimus? Adipisci, eligendi aliquam quas rerum officia et maxime nulla commodi repellendus unde dolores illum?</p>
+        </article>
+    </main>   
+    <script>
+        function menu(){
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }   
+        }
+    </script> 
+</body>
+</html>

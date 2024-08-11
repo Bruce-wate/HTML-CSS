@@ -1,0 +1,1 @@
+Voce foi redirecionado para o banco de dados php_check_syntax

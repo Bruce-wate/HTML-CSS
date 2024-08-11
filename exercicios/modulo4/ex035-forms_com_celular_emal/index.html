@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+<form action="serv.php" method="get">
+    
+    <fieldset>
+        <legend>Dados pessoais</legend>
+            <p>
+                <label for="iname">Nome:</label>
+                <input type="text" name="Nome" id="iname">
+            </p>
+        
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="Senha" id="isenha" required>
+            </p>
+        
+            <p>
+                <label for="mail">Email:</label>
+                <input type="email" name="email" id="mail" autocomplete="email" required>
+            </p>
+        
+            <p>
+                <label for="cellphone">Celular:</label>
+                <input type="tel" name="celular" id="cellphone" autocomplete="tel" required>
+            </p>
+            
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+    </fieldset>
+</form>
+</body>
+</html>

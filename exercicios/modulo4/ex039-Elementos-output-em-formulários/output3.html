@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advinhe quantos anos tu tens com o meu programa em Js</title>
+</head>
+<body>
+    <h1>Quantos anos eu tenho?</h1>
+
+    <form action="serv.php">
+
+        <p>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="anos" id="iano" min="1965" max="2024" oninput="calcIdade()">
+        </p>
+
+        <p>
+            <label for="idade">Sua idade é:</label>
+            <output id="idade">0</output>
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            idade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>

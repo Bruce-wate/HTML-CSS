@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinámica</title>
+</head>
+<body>
+    <p>Criando e versionalisando uma imagem dinámica</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/shortpic.png"type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/verfdin.png" type="image/png">
+        <img src="imagens/grandin.png" alt="imagem flexivel">
+    </picture>
+    <h2>Adicionando audio </h2>
+    <h3>Metodo 1</h3> <hr>
+    <audio src="midia/Nitefela.mp3" autoplay controls></audio>
+    <h4>Metodo 2</h4> <hr>
+    <audio preload="auto" autoplay controls>
+        <source src="midia/Nitefela.mp3" type="audio/mpeg">
+        <source src="midia/Nitefela.ogg" type="audio/ogg">
+        <source src="midia/Nitefela.wav" type="audio/wav">
+        <p>O seu navegador é incompativel com o audio , <a href="midia/Nitefela.mp3">baixe aqui</a></p>
+    </audio>    
+</body>
+</html>

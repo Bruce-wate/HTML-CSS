@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários de senha</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            margin: auto;
+        }
+        
+        h1{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p#box1{
+            margin-top: 10%;
+        }
+
+        p.box{
+            padding: 10px;
+            margin-left: 20px;
+        }
+
+        div{
+            margin: auto;
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 1px solid black;
+            padding: 40px;
+            background-image: linear-gradient(to right, lightgray, lightblue);
+
+        }
+
+        input#enviar{
+            margin-top: 10%;
+            padding: 5px;
+        }
+
+        input#limpar{
+            margin-left: 50%;
+            margin-top: 10%;
+            padding: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Adicione os seus dados</h1>
+
+    <div>
+        <form autocomplete="off" action="base.php" method="post">
+            <p class="box" id="box1">
+                <label for="Inome">Nome:</label>
+                <input type="text" name="nome" id="Inome" minlength="5" maxlength="20" placeholder="Adicione o seu nome">
+            </p>
+
+            <p class="box">
+                <label for="Isobrenome">Sobrenome:</label>
+                <input type="text" name="Sobrenome" id="Isobrenome" maxlength="15" minlength="5" placeholder="Adicione o seu Sobrenome">
+            </p>
+
+            <p class="box">
+                <label for="Isenha">Senha:</label>
+                <input type="password" name="Senha" id="Isenha" maxlength="15" minlength="8" placeholder="Adicione a senha">
+            </p>
+
+            <input id="enviar" type="submit" value="Enviar">
+
+            <input id="limpar" type="reset" value="Limpar">
+        </form>
+    </div>
+</body>
+</html>

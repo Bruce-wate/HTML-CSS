@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Desafio 2 sobre mensclagem de tabelas</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            table {
+                margin: auto;
+            }
+
+            td {
+                border: 1px solid black;
+                width: 80px;
+                padding: 7px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center">Segunda tabela</h1>
+
+        <table>
+            <!-- Linha 1 -->
+            <tr>
+                <td colspan="4">A</td>
+                <td rowspan="4">B</td>
+            </tr>
+
+            <!-- Linha 2 -->
+            <tr>
+                <td rowspan="4">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+
+            <!-- Linha 3 -->
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+
+            <!-- Linha 4 -->
+            <tr>
+                <td>J</td>
+                <td>K</td>
+                <td>L</td>
+            </tr>
+
+            <!-- Linha 5 -->
+            <tr>
+                <td colspan="4">M</td>
+            </tr>
+        </table>
+    </body>
+</html>

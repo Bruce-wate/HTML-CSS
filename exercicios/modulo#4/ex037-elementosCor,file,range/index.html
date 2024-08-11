@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula sobre cores, files e Range</title>
+</head>
+<body>
+    <h1>Cores, range e files</h1>
+
+    <form action="serv.php" method="post">
+
+        <p id="Color">
+            <label for="icor">Selecione a sua cor preferida:</label>
+            <input type="color" name="cor" id="icor" value="#ffffff">
+        </p>
+
+        <p id="satisfação">
+            <label for="isatisf">Nível de satisfação do usuário:</label>
+            <input type="range" name="satisfação" id="isatisf" min="2" max="6" value="4">
+        </p>
+
+        <p>
+            <label for="ifile">Selecione a sua foto</label>
+            <input type="file" name="file" id="ifile">
+        </p>
+
+
+
+        <p id="Envio-limpeza">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

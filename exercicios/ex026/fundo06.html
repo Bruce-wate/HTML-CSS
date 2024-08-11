@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Caixas verticais</title>
+        <style>
+            body {
+                margin: 0%;
+            }
+
+            #teste {
+                border: 2px solid black;
+
+            }
+
+            #Conteiner {
+                position: relative;
+                height: 500px;
+                width: 500px;
+                background-color: rgb(151, 58, 190);
+                margin: auto;
+                height: 100vh;
+            }
+
+            #conteúdo {
+                position: absolute;
+                height: 250px;
+                width: 250px;
+                background-color: aqua;
+                left: 50%;
+                top: 50%;
+
+                transform: translate(-50%, -50%);
+            }
+            p {
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: brown;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="teste">
+            <section id="Conteiner">
+                <article id="conteúdo">
+                    <p>Hi my love</p>
+                </article>
+            </section>
+        </section>
+    </body>
+</html>
