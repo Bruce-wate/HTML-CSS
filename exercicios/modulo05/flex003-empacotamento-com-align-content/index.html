@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-content</title>
+    <style>
+        /*O align-content alinha elementos consoante o ACROSS-AXIS, e ele tem todas as propriedades presentes no justify-content. O align content é usado quando o wrap está ativado*/
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            background-color: lightgrey;
+        }
+
+        main#conteiner{
+            background-color: rgb(33, 33, 155);
+            height: 80vh;
+            width: 90vw;
+            margin: auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-end;
+        }
+
+        .item{
+            border: 1px dashed black;
+            background-color: aquamarine;
+            padding: 15px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main id="conteiner">
+            <div class="item">Hello world 1</div>
+            <div class="item">Hello world 2</div>
+            <div class="item">Hello world 3</div>
+            <div class="item">Hello world 4</div>
+            <div class="item">Hello world 5</div>
+            <div class="item">Hello world 6</div>
+    </main>
+</body>
+</html>

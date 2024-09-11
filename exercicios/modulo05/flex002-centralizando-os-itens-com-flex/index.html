@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizado com o flexbox</title>
+    <style>
+
+        /* O alinhamento centralizado, só é feito se tiver um elemento (Pai) no exterior do content que deseja ser alinhado*/
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: lightgray;
+        }
+
+        main{
+            background-color: lightseagreen;
+            height: 80vh;
+            width: 60vw;
+            margin: auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #conteiner{
+            background-color: blue;
+            padding: 10px;
+            height: 200px;
+            width: 150px;
+            display: flex;
+
+            
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .item{
+            background-color: aqua;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="conteiner">
+            <div class="item">Hello world</div>
+        </div>
+    </main>
+</body>
+</html>
