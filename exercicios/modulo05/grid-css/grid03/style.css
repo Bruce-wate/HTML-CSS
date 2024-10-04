@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+}
+
+#conteiner{
+    background-color: rgb(112, 101, 101);
+    border: 3px solid black;
+    height: 50vh;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.header{
+    background-color: gainsboro;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.aside{
+    background-color: green;
+    grid-row-start: 2;
+    grid-row-end:4;
+}
+
+.content{
+    background-color: aquamarine;
+    justify-self: start;
+}
+
+.footer{
+    background-color: gray;
+    justify-self: end;
+}
+
+

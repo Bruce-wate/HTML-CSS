@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+}
+
+header{
+    background-color: gray;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > h2{
+    color: white;
+    flex: 0 0 100px;
+}
+
+header > nav{
+    display: flex;
+    flex-flow: reverse wrap;
+    display: block;
+}
+
+header > span#burger{
+    align-self: center;
+    cursor: pointer;
+    display: block;
+}
+
+header > nav > a{
+    background-color: black;
+    padding: 8px;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+header > nav > a:hover{
+    background-color: white;
+    color: black;
+
+    transition: .8s;
+}
+
+
+main{
+    background-color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.692);
+    border-radius: 5px;
+
+    margin: 9px;
+    padding: 8px;
+
+    text-align: justify;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow and Shink</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            background-color: blue;
+        }
+
+        div#conteiner{
+            background-color: white;
+            border-radius: 10px;
+            height: 100px;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            
+        }
+
+        div.item{
+            flex-basis: 150px;
+            background-color: yellow;
+            border: .5px dashed blue;
+            border-radius: 5px;
+            text-align: center;
+            align-content: center;
+            margin: 5px;
+
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        div#conteiner2{
+            margin-top: 10px;
+            background-color: white;
+            display: flex;
+        }
+
+        div#i1{
+            flex-basis: 120px;
+            flex-shrink: 1;
+            flex-grow: 2;
+
+            border: 1px dashed blue;
+
+            background-color: aqua;
+        }
+
+        div#i2{
+            flex-basis: 120px;
+            flex-shrink: 0;
+            flex-grow: 1;
+
+            border: 1px dashed blue;
+
+            background-color:  blueviolet;
+        }
+
+        div#i3{
+            flex-basis: 120px;
+            flex-shrink: 3;
+            flex-grow: 2;
+
+            border: 1px dashed blue;
+
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <div id="conteiner2">
+        <div id="i1">A</div>
+        <div id="i2">B</div>
+        <div id="i3">C</div>
+    </div>
+</body>
+</html>

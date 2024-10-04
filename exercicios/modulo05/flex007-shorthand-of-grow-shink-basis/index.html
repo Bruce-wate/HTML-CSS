@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorthand of flex</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            background-color: lightgray;
+        }
+
+        .conteiner{
+            height: 60vh;
+            background-color: indigo;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-content: center;
+        }
+
+        .item{
+            background-color: blue;
+
+            border: 1px solid black;
+            border-radius: 7px;
+
+            flex: 0 1 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+</body>
+</html>
